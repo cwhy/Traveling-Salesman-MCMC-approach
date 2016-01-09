@@ -26,12 +26,11 @@ def cal_dist(distance, L):
         d = d + distance[L[i % N], L[(i + 1) % N]]
     return d
 
-T = float(pow(2, -8)) # free parameters, contorls 
+T = float(pow(2, -8)) # free parameters, inversely related to the probability of rejection if the direction is wrong
 
 ITER = 10000
-L = np.arange(N)
+L = np.arange(N) # initail route sequence
 print cal_dist(distance, L) # initial distance
-shortest_dist = 0
 dist_all = []
 for i in range(ITER):
     a = np.random.randint(1, N - 1)
