@@ -20,6 +20,7 @@ distance = (distance + distance.T) / 2.0
 ind_diag = range(N)
 distance[ind_diag, ind_diag] = 0
 
+# Calculate total distance for a given sequence
 def cal_dist(distance, L):
     d = 0
     for i in range(len(L)):
