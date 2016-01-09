@@ -9,8 +9,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import copy
 
-# MCMC solution for Traveling Salesman problem
-# start from 1 to 20
+# MCMC (Simulated Annealing) solution for Traveling Salesman problem
+# start from city 1 to city N
 
 N = 20 # the number of cities
 
